@@ -1,146 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>iPharmEGY POS</title>
-  <link rel="icon" href="assets/icon.png?v=1" />
-  <style>
-    :root{
-      --blue:#1e40af;
-      --blue2:#0b5ed7;
-      --green:#00c853;
-      --bg1:#eef7ff;
-      --bg2:#f7fffb;
-      --card:#ffffff;
-      --text:#0f172a;
-      --muted:#64748b;
-      --shadow:0 20px 60px rgba(2,6,23,.12);
-      --radius:22px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      color:var(--text);
-      background: radial-gradient(900px 600px at 15% 15%, var(--bg2), transparent 60%),
-                  radial-gradient(900px 600px at 85% 10%, var(--bg1), transparent 60%),
-                  linear-gradient(180deg, #ffffff 0%, #f3f7ff 100%);
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:28px;
-    }
-    .shell{width:min(980px,100%)}
-    header{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:16px;
-      padding:14px 18px;
-      background:rgba(255,255,255,.7);
-      border:1px solid rgba(15,23,42,.06);
-      border-radius:999px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 10px 30px rgba(2,6,23,.06);
-      margin-bottom:18px;
-    }
-    .brand{display:flex; align-items:center; gap:12px}
-    .brand img{width:34px; height:34px}
-    .brand b{font-size:18px; color:var(--blue)}
-    .pill{
-      font-size:12px; color:var(--muted);
-      padding:6px 10px; border-radius:999px;
-      background:#ffffff;
-      border:1px solid rgba(15,23,42,.08);
-    }
-    .grid{
-      display:grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap:18px;
-    }
-    @media (max-width: 860px){ .grid{grid-template-columns:1fr} }
-    .card{
-      background:rgba(255,255,255,.78);
-      border:1px solid rgba(15,23,42,.06);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:22px;
-      backdrop-filter: blur(10px);
-    }
-    h1{margin:0 0 6px; font-size:34px; color:var(--blue)}
-    p{margin:0; color:var(--muted); line-height:1.7}
-    .cta{margin-top:18px; display:flex; gap:10px; flex-wrap:wrap}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:12px 18px; border-radius:14px;
-      text-decoration:none; font-weight:700;
-      border:1px solid rgba(15,23,42,.08);
-      transition:.2s;
-    }
-    .btn.primary{background:linear-gradient(135deg,var(--blue2),var(--blue)); color:#fff}
-    .btn.secondary{background:#fff; color:var(--blue)}
-    .btn:hover{transform:translateY(-1px)}
-    .mini{
-      display:grid; gap:12px;
-      grid-template-columns: 1fr;
-    }
-    .kpi{
-      padding:14px 14px;
-      border-radius:18px;
-      background:#fff;
-      border:1px solid rgba(15,23,42,.06);
-    }
-    .kpi b{color:var(--blue); font-size:14px}
-    .kpi span{display:block; color:var(--muted); font-size:12px; margin-top:6px}
-    footer{
-      text-align:center;
-      color:var(--muted);
-      font-size:12px;
-      margin-top:14px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>iPharmEGY Admin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <div class="shell">
-    <header>
-      <div class="brand">
-        <img src="assets/icon.png?v=1" alt="iPharmEGY"/>
-        <div>
-          <b>iPharmEGY</b>
-          <div style="font-size:12px;color:#0ea5a5;font-weight:700;margin-top:2px">POS</div>
-        </div>
-      </div>
-      <div class="pill">Light Theme • Coming Soon</div>
-    </header>
 
-    <div class="grid">
-      <section class="card">
-        <h1>POS Console</h1>
-        <p>Point of Sale interface for billing, receipts, and customer checkout. This is a clean placeholder page until the full POS app is deployed.</p>
+<div class="hero">
 
-        <div class="cta">
-          <a class="btn primary" href="app.html">Enter POS</a>
-          <a class="btn secondary" href="https://ipharmegy.com">Back to Portal</a>
-        </div>
-      </section>
+    <div class="card">
 
-      <aside class="card mini">
-        <div class="kpi">
-          <b>Brand Consistency</b>
-          <span>Uses the same iPharmEGY icon + light SaaS style.</span>
-        </div>
-        <div class="kpi">
-          <b>Fast Deploy</b>
-          <span>Static page via GitHub → Cloudflare Pages.</span>
-        </div>
-        <div class="kpi">
-          <b>Next Step</b>
-          <span>Replace app.html with the real POS build output.</span>
-        </div>
-      </aside>
+        <img src="assets/logo.png" class="logo">
+
+        <h1>iPharmEGY Admin Portal</h1>
+        <p>Secure Cloud Management System</p>
+
+        <a href="dashboard.html" class="btn">Enter Dashboard</a>
+
     </div>
 
-    <footer>© iPharmEGY • POS • 2026</footer>
-  </div>
+</div>
+
+<script src="js/app.js"></script>
 </body>
 </html>
