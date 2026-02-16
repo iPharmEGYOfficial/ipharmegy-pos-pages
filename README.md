@@ -1,2 +1,2 @@
-# ipharmegy-pos-pages
-fast point-of-sale frontend deployed on Cloudflare Pages.
+iPharmEGY POS
+Official POS frontend portal.

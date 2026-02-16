@@ -1,0 +1,1 @@
+console.log('iPharmEGY POS Loaded');
